@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useState, useRef, useEffect } from 'react'
-import { motion, useInView, useAnimationFrame } from 'framer-motion'
-import '../styles/AboutUs.css'
+import { motion, useInView } from 'framer-motion'
+import '@/styles/AboutUs.css'
 
 const About = () => {
   const [activeTab, setActiveTab] = useState('story')
@@ -13,7 +13,7 @@ const About = () => {
     awards: 0,
   })
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, threshold: 0.3 })
+  const isInView = useInView(ref, { once: false, threshold: 0.3 })
 
   // Animation for counting numbers
   useEffect(() => {
@@ -98,21 +98,127 @@ const About = () => {
 
   return (
     <section id="about" className="about-section">
+      {/* Dynamic Background Elements */}
+      <div className="about-bg">
+        {/* Animated Particles */}
+        {Array.from({ length: 6 }).map((_, i) => (
+          <motion.div
+            key={i}
+            className={`about-particle particle${i + 1}`}
+            animate={{
+              y: [-20, -60, -20],
+              x: [-10, 10, -10],
+              opacity: [0.3, 0.5, 0.3],
+            }}
+            transition={{
+              duration: 4 + i * 0.5,
+              repeat: Infinity,
+              ease: 'easeInOut',
+              delay: i * 0.5,
+            }}
+          />
+        ))}
+
+        {/* Orbital Rings */}
+        {Array.from({ length: 3 }).map((_, i) => (
+          <motion.div
+            key={`orbital-${i}`}
+            className={`orbital-ring ring${i + 1}`}
+            animate={{
+              rotate: [0, 360],
+            }}
+            transition={{
+              duration: 20 + i * 5,
+              repeat: Infinity,
+              ease: 'linear',
+            }}
+          />
+        ))}
+      </div>
+
       <div className="container">
-        {/* Section Header */}
+        {/* Section Header with Interior Design Icon */}
         <motion.div
           className="about-header"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
-          <span className="section-tag">About Us</span>
-          <h2 className="section-title">Crafting Dreams Into Reality</h2>
-          <p className="section-subtitle">
+          {/* About Icon Container */}
+          <motion.div
+            className="about-icon-container"
+            animate={{
+              rotateY: [0, 180, 360],
+              scale: [1, 1.1, 1],
+            }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              ease: 'easeInOut',
+            }}
+          >
+            <div className="about-icon">
+              {/* Interior Designer Icon */}
+              <img
+                src="https://img.icons8.com/fluency/96/8b5cf6/interior-design.png"
+                alt="Interior Design"
+                width="45"
+                height="45"
+              />
+            </div>
+          </motion.div>
+
+          <motion.div
+            className="title-underline"
+            initial={{ width: 0, opacity: 0 }}
+            whileInView={{ width: '120px', opacity: 1 }}
+            transition={{ duration: 1.5, delay: 0.8, ease: 'easeOut' }}
+            viewport={{ once: false }}
+          >
+            <motion.div
+              className="underline-dot"
+              animate={{
+                x: [-60, 60, -60],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: 'easeInOut',
+              }}
+            />
+          </motion.div>
+
+          <motion.span
+            className="section-tag"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: false }}
+          >
+            About Us
+          </motion.span>
+
+          <motion.h2
+            className="section-title"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: false }}
+          >
+            Crafting Dreams Into Reality
+          </motion.h2>
+
+          <motion.p
+            className="section-subtitle"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            viewport={{ once: false }}
+          >
             We are passionate interior designers dedicated to creating spaces
             that inspire, comfort, and reflect your unique personality.
-          </p>
+          </motion.p>
         </motion.div>
 
         {/* Stats Counter */}
@@ -122,25 +228,41 @@ const About = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
           <div className="stats-grid">
-            <div className="stat-item">
+            <motion.div
+              className="stat-item"
+              whileHover={{ scale: 1.05, y: -10 }}
+              transition={{ type: 'spring', stiffness: 300 }}
+            >
               <div className="stat-number">{counters.projects}+</div>
               <div className="stat-label">Projects Completed</div>
-            </div>
-            <div className="stat-item">
+            </motion.div>
+            <motion.div
+              className="stat-item"
+              whileHover={{ scale: 1.05, y: -10 }}
+              transition={{ type: 'spring', stiffness: 300 }}
+            >
               <div className="stat-number">{counters.clients}+</div>
               <div className="stat-label">Happy Clients</div>
-            </div>
-            <div className="stat-item">
+            </motion.div>
+            <motion.div
+              className="stat-item"
+              whileHover={{ scale: 1.05, y: -10 }}
+              transition={{ type: 'spring', stiffness: 300 }}
+            >
               <div className="stat-number">{counters.years}+</div>
               <div className="stat-label">Years Experience</div>
-            </div>
-            <div className="stat-item">
+            </motion.div>
+            <motion.div
+              className="stat-item"
+              whileHover={{ scale: 1.05, y: -10 }}
+              transition={{ type: 'spring', stiffness: 300 }}
+            >
               <div className="stat-number">{counters.awards}+</div>
               <div className="stat-label">Awards Won</div>
-            </div>
+            </motion.div>
           </div>
         </motion.div>
 
@@ -150,7 +272,7 @@ const About = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
           <div className="tab-navigation">
             {Object.keys(tabContent).map((tab) => (
@@ -215,7 +337,7 @@ const About = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
           <h3 className="team-title">Meet Our Creative Team</h3>
           <div className="team-grid">
@@ -227,7 +349,7 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 whileHover={{ y: -10 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
               >
                 <div className="team-image">
                   <img src={member.image} alt={member.name} />
@@ -266,36 +388,49 @@ const About = () => {
           </div>
         </motion.div>
 
-        {/* Call to Action */}
+        {/* Call to Action - Updated Version */}
         <motion.div
           className="about-cta"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
-          <div className="cta-content">
-            <h3>Ready to Transform Your Space?</h3>
-            <p>
-              Let's discuss your dream project and bring your vision to life.
-            </p>
-            <motion.button
-              className="main-cta-button"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Start Your Project
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
+          {/* Decorative elements */}
+          <div className="cta-decoration cta-decoration-1"></div>
+          <div className="cta-decoration cta-decoration-2"></div>
+          <div className="cta-decoration cta-decoration-3"></div>
+
+          {/* Content wrapper with left-right layout */}
+          <div className="cta-content-wrapper">
+            <div className="cta-content">
+              <h3>Ready to Transform Your Space?</h3>
+              <p>
+                Let's discuss your dream project and bring your vision to life.
+                Our team of experts is ready to create something extraordinary
+                for you.
+              </p>
+            </div>
+
+            <div className="cta-button-container">
+              <motion.button
+                className="main-cta-button"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
-                <path d="m9 18 6-6-6-6" />
-              </svg>
-            </motion.button>
+                Start Your Project
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </motion.button>
+            </div>
           </div>
         </motion.div>
       </div>

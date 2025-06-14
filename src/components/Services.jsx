@@ -291,7 +291,7 @@ const Services = () => {
   return (
     <section id="services" className="services-section">
       <div className="container">
-        {/* Section Header */}
+        {/* Section Header with Services Icon */}
         <motion.div
           className="services-header"
           initial={{ opacity: 0, y: 50 }}
@@ -299,13 +299,81 @@ const Services = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: false }}
         >
-          <span className="section-tag">Our Services</span>
-          <h2 className="section-title">Complete Interior Design Solutions</h2>
-          <p className="section-subtitle">
+          {/* Services Icon Container */}
+          <motion.div
+            className="services-icon-container"
+            animate={{
+              rotateY: [0, 180, 360],
+              scale: [1, 1.1, 1],
+            }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              ease: 'easeInOut',
+            }}
+          >
+            <div className="services-icon">
+              {/* Services Icon */}
+              <img
+                src="https://img.icons8.com/fluency/96/8b5cf6/service.png"
+                alt="Services"
+                width="45"
+                height="45"
+              />
+            </div>
+          </motion.div>
+
+          <motion.div
+            className="services-title-underline"
+            initial={{ width: 0, opacity: 0 }}
+            whileInView={{ width: '120px', opacity: 1 }}
+            transition={{ duration: 1.5, delay: 0.8, ease: 'easeOut' }}
+            viewport={{ once: false }}
+          >
+            <motion.div
+              className="services-underline-dot"
+              animate={{
+                x: [-60, 60, -60],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: 'easeInOut',
+              }}
+            />
+          </motion.div>
+
+          <motion.span
+            className="section-tag"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: false }}
+          >
+            Our Services
+          </motion.span>
+
+          <motion.h2
+            className="section-title"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: false }}
+          >
+            Complete Interior Design Solutions
+          </motion.h2>
+
+          <motion.p
+            className="section-subtitle"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            viewport={{ once: false }}
+          >
             From concept to completion, we offer comprehensive interior design
             services tailored to transform your space into something
             extraordinary.
-          </p>
+          </motion.p>
         </motion.div>
 
         {/* Services List */}

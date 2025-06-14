@@ -5,10 +5,11 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { ThemeProvider } from '../context/ThemeContext'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
-import './globals.css'
 import About from '@/components/AboutUs'
 import Services from '@/components/Services'
 import Portfolio from '@/components/Portfolio'
+import WhyChooseUs from '@/components/WhyChooseUs'
+import './globals.css'
 
 // Loading Screen Component
 const LoadingScreen = ({ isLoading }) => {
@@ -130,11 +131,12 @@ const HomePage = () => {
             <About />
             <Services />
             <Portfolio />
+            <WhyChooseUs />
             {/* Placeholder sections for navigation */}
             {/* <PlaceholderSection id="about" title="About Us" /> */}
             {/* <PlaceholderSection id="services" title="Our Services" /> */}
             {/* <PlaceholderSection id="portfolio" title="Portfolio" /> */}
-            <PlaceholderSection id="features" title="Why Choose Us" />
+            {/* <PlaceholderSection id="features" title="Why Choose Us" /> */}
             <PlaceholderSection id="contact" title="Contact Us" />
           </main>
 

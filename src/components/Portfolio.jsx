@@ -10,7 +10,7 @@ const Portfolio = () => {
   const isInView = useInView(ref, { once: false, threshold: 0.2 })
 
   const filterOptions = [
-    { id: 'all', label: 'All Projects', icon: '🏠' },
+    { id: 'all', label: 'Recent Projects', icon: '🏠' },
     { id: 'living-room', label: 'Living Room', icon: '🛋️' },
     { id: 'kitchen', label: 'Kitchen', icon: '🍳' },
     { id: 'bedroom', label: 'Bedroom', icon: '🛏️' },
@@ -342,7 +342,7 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="portfolio-section" ref={ref}>
       <div className="container">
-        {/* Section Header */}
+        {/* Section Header with Portfolio Icon */}
         <motion.div
           className="portfolio-header"
           initial={{ opacity: 0, y: 50 }}
@@ -350,12 +350,80 @@ const Portfolio = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: false }}
         >
-          <span className="section-tag">Our Portfolio</span>
-          <h2 className="section-title">Transforming Visions Into Reality</h2>
-          <p className="section-subtitle">
+          {/* Portfolio Icon Container */}
+          <motion.div
+            className="portfolio-icon-container"
+            animate={{
+              rotateY: [0, 180, 360],
+              scale: [1, 1.1, 1],
+            }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              ease: 'easeInOut',
+            }}
+          >
+            <div className="portfolio-icon">
+              {/* Portfolio Icon */}
+              <img
+                src="https://img.icons8.com/fluency/96/8b5cf6/portfolio.png"
+                alt="Portfolio"
+                width="45"
+                height="45"
+              />
+            </div>
+          </motion.div>
+
+          <motion.div
+            className="portfolio-title-underline"
+            initial={{ width: 0, opacity: 0 }}
+            whileInView={{ width: '120px', opacity: 1 }}
+            transition={{ duration: 1.5, delay: 0.8, ease: 'easeOut' }}
+            viewport={{ once: false }}
+          >
+            <motion.div
+              className="portfolio-underline-dot"
+              animate={{
+                x: [-60, 60, -60],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: 'easeInOut',
+              }}
+            />
+          </motion.div>
+
+          <motion.span
+            className="section-tag"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: false }}
+          >
+            Our Portfolio
+          </motion.span>
+
+          <motion.h2
+            className="section-title"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: false }}
+          >
+            Transforming Visions Into Reality
+          </motion.h2>
+
+          <motion.p
+            className="section-subtitle"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            viewport={{ once: false }}
+          >
             Explore our diverse collection of interior design projects that
             showcase our expertise across residential and commercial spaces.
-          </p>
+          </motion.p>
         </motion.div>
 
         {/* Filter Buttons */}
@@ -413,54 +481,6 @@ const Portfolio = () => {
               />
             ))}
           </AnimatePresence>
-        </motion.div>
-
-        {/* Stats Section */}
-        <motion.div
-          className="portfolio-stats"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: false }}
-        >
-          <div className="stats-grid">
-            <motion.div className="stat-item" whileHover={{ scale: 1.05 }}>
-              <motion.span
-                className="stat-number"
-                initial={{ opacity: 0, scale: 0.5 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: false }}
-              >
-                {portfolioItems.length}+
-              </motion.span>
-              <span className="stat-label">Projects Completed</span>
-            </motion.div>
-            <motion.div className="stat-item" whileHover={{ scale: 1.05 }}>
-              <motion.span
-                className="stat-number"
-                initial={{ opacity: 0, scale: 0.5 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                viewport={{ once: false }}
-              >
-                4
-              </motion.span>
-              <span className="stat-label">Design Categories</span>
-            </motion.div>
-            <motion.div className="stat-item" whileHover={{ scale: 1.05 }}>
-              <motion.span
-                className="stat-number"
-                initial={{ opacity: 0, scale: 0.5 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.6 }}
-                viewport={{ once: false }}
-              >
-                98%
-              </motion.span>
-              <span className="stat-label">Client Satisfaction</span>
-            </motion.div>
-          </div>
         </motion.div>
 
         {/* Call to Action */}
