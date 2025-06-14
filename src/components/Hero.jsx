@@ -219,7 +219,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <motion.div
+      {/* <motion.div
         className="scroll-indicator"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -241,7 +241,7 @@ const Hero = () => {
             <path d="m6 9 6 6 6-6" />
           </svg>
         </motion.div>
-      </motion.div>
+      </motion.div> */}
 
       {/* Slide indicators */}
       <motion.div
