@@ -16,6 +16,11 @@ export const metadata = {
     'Transform your space with Moon Shine Interiors. We create stunning, functional interior designs that reflect your personality and enhance your lifestyle. Based in Kolkata.',
   keywords:
     'interior design, Kolkata interior designer, home decor, luxury interiors, residential design, commercial design, Moon Shine Interiors',
+
+  // Simple favicon setup
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({ children }) {
@@ -30,6 +35,9 @@ export default function RootLayout({ children }) {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#1a1a2e" />
+
+        {/* Simple favicon */}
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>

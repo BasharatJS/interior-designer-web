@@ -10,7 +10,6 @@ import Services from '@/components/Services'
 import Portfolio from '@/components/Portfolio'
 import WhyChooseUs from '@/components/WhyChooseUs'
 import './globals.css'
-import ContactMap from '@/components/ContactMap'
 import Contact from '@/components/Contact'
 
 // Loading Screen Component

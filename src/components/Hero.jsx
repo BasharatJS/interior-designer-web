@@ -75,6 +75,21 @@ const Hero = () => {
     }
   }
 
+  // Function to handle certificate click
+  const handleCertificateClick = () => {
+    // Open both PDFs in new tabs
+    const pdf1 = '/images/MOONSHINEINTERIOR1.pdf'
+    const pdf2 = '/images/UdyamRegistrationCertificate.pdf'
+
+    // Open first PDF
+    window.open(pdf1, '_blank', 'noopener,noreferrer')
+
+    // Small delay before opening second PDF to avoid popup blockers
+    setTimeout(() => {
+      window.open(pdf2, '_blank', 'noopener,noreferrer')
+    }, 100)
+  }
+
   return (
     <section id="home" className="hero">
       {/* Background Carousel */}
@@ -202,13 +217,25 @@ const Hero = () => {
               { icon: '🏆', text: '500+ Projects' },
               { icon: '⭐', text: '5-Star Rating' },
               { icon: '🎯', text: '100% Satisfaction' },
+              {
+                icon: '📜',
+                text: 'Certified',
+                onClick: handleCertificateClick,
+                isCertificate: true,
+              },
             ].map((item, index) => (
               <motion.div
                 key={index}
-                className="hero-feature"
+                className={`hero-feature ${
+                  item.isCertificate ? 'hero-feature-certificate' : ''
+                }`}
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 1.8 + index * 0.1 }}
+                onClick={item.onClick}
+                style={item.isCertificate ? { cursor: 'pointer' } : {}}
+                whileHover={item.isCertificate ? { scale: 1.05, y: -2 } : {}}
+                whileTap={item.isCertificate ? { scale: 0.95 } : {}}
               >
                 <span className="hero-feature-icon">{item.icon}</span>
                 {item.text}
