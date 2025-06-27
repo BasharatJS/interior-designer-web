@@ -11,6 +11,7 @@ import Portfolio from '@/components/Portfolio'
 import WhyChooseUs from '@/components/WhyChooseUs'
 import './globals.css'
 import Contact from '@/components/Contact'
+import Gallery from '@/components/Gallery'
 
 // Loading Screen Component
 const LoadingScreen = ({ isLoading }) => {
@@ -131,6 +132,7 @@ const HomePage = () => {
             <Hero />
             <About />
             <Services />
+            <Gallery />
             <Portfolio />
             <WhyChooseUs />
             <Contact />

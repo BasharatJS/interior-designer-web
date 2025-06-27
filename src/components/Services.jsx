@@ -255,7 +255,7 @@ const Services = () => {
         >
           <div className="image-container">
             <motion.div
-              className="image-wrapper"
+              className="image-wrapper-services"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={
                 isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }

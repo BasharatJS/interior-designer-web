@@ -325,7 +325,7 @@ const About = () => {
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ duration: 0.7 }}
                 />
-                <div className="image-overlay"></div>
+                <div className="image-overlay-about"></div>
               </div>
             </motion.div>
           </div>

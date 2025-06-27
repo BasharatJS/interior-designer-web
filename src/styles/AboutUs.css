@@ -452,7 +452,7 @@
   transition: var(--transition);
 }
 
-.image-overlay {
+.image-overlay-about {
   position: absolute;
   top: 0;
   left: 0;
@@ -460,14 +460,14 @@
   height: 100%;
   background: linear-gradient(
     135deg,
-    rgba(139, 92, 246, 0.3) 0%,
+    rgba(139, 92, 246, 0.9) 0%,
     rgba(244, 208, 63, 0.2) 100%
   );
   opacity: 0;
   transition: var(--transition);
 }
 
-.tab-image:hover .image-overlay {
+.tab-image:hover .image-overlay-about {
   opacity: 1;
 }
 
