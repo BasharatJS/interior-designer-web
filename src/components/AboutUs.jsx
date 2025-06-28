@@ -71,28 +71,25 @@ const About = () => {
 
   const team = [
     {
-      name: 'Md Azad Ansari',
-      role: 'Founder & Lead Designer',
-      image:
-        'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop',
+      name: 'Azad Ansari',
+      role: 'CEO & Lead Interior Designer',
+      image: '/images/CEO.jpg',
       description:
-        'With 8+ years of experience, Azad brings creativity and precision to every project.',
+        'As our CEO and Lead Interior Designer, Azad brings over 8+ years of exceptional experience in transforming spaces into stunning environments. His expertise spans residential, commercial, and hospitality design. Known for his innovative approach to space planning and sustainable design solutions, Azad has successfully completed 500+ projects across Kolkata and Eastern India. He specializes in contemporary and modern interior styles, with a keen eye for luxury finishes and smart home integration.',
     },
     {
-      name: 'Jacob Doe',
-      role: 'Senior Interior Designer',
-      image:
-        'https://plus.unsplash.com/premium_photo-1661443913056-d6c92c8b4d27?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fFNlbm9yJTIwaW50ZXJpb3IlMjBkZXNpZ25lciUyMG1hbiUyMGltYWdlfGVufDB8fDB8fHww',
+      name: 'Naushad Ansari',
+      role: 'Assistant Interior Designer',
+      image: '/images/team-member1.jpg',
       description:
-        'Specialist in residential design with a keen eye for modern aesthetics.',
+        'Naushad is a skilled Assistant Interior Designer with 5+ years of experience in creating beautiful and functional spaces. He specializes in project coordination, site supervision, and client consultation. His expertise includes space planning, material selection, and ensuring seamless execution of design concepts. Naushad excels at managing multiple projects simultaneously while maintaining high quality standards. He is particularly adept at residential renovations, office interiors, and retail space design.',
     },
     {
-      name: 'Tommy Doe',
-      role: 'Project Manager',
-      image:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop',
+      name: 'Khalid Ali',
+      role: 'Assistant Interior Designer',
+      image: '/images/profile1.jpg',
       description:
-        'Ensures seamless execution and timely delivery of all projects.',
+        "Khalid is a talented Assistant Interior Designer who specializes in residential design with a focus on modern and minimalist aesthetics. With his strong background in 3D visualization and space optimization, he excels at creating functional yet beautiful living spaces. His expertise includes kitchen and bathroom design, custom furniture selection, and color coordination. Khalid is passionate about incorporating the latest design trends while ensuring each project reflects the client's unique personality and lifestyle needs.",
     },
   ]
 
