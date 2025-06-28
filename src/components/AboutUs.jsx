@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react'
 import { motion, useInView } from 'framer-motion'
-import '@/styles/AboutUs.css'
+import '../styles/AboutUs.css'
 
 const About = () => {
   const [activeTab, setActiveTab] = useState('story')

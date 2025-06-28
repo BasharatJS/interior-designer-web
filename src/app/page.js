@@ -7,11 +7,12 @@ import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import About from '@/components/AboutUs'
 import Services from '@/components/Services'
+import Gallery from '@/components/Gallery'
 import Portfolio from '@/components/Portfolio'
 import WhyChooseUs from '@/components/WhyChooseUs'
-import './globals.css'
 import Contact from '@/components/Contact'
-import Gallery from '@/components/Gallery'
+
+import './globals.css'
 
 // Loading Screen Component
 const LoadingScreen = ({ isLoading }) => {
@@ -136,12 +137,6 @@ const HomePage = () => {
             <Portfolio />
             <WhyChooseUs />
             <Contact />
-            {/* Placeholder sections for navigation */}
-            {/* <PlaceholderSection id="about" title="About Us" /> */}
-            {/* <PlaceholderSection id="services" title="Our Services" /> */}
-            {/* <PlaceholderSection id="portfolio" title="Portfolio" /> */}
-            {/* <PlaceholderSection id="features" title="Why Choose Us" /> */}
-            {/* <PlaceholderSection id="contact" title="Contact Us" /> */}
           </main>
 
           {/* Footer placeholder */}
