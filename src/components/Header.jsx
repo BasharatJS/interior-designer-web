@@ -270,7 +270,10 @@ const Header = () => {
           style={{ cursor: 'pointer' }}
         >
           {LogoComponent}
-          <span>Moon Shine</span>
+          <div className="logo-text-container">
+            <span className="logo-text-line">Sun Shine</span>
+            <span className="logo-text-line">Interior</span>
+          </div>
         </div>
 
         {/* Desktop Navigation */}

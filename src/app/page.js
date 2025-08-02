@@ -162,7 +162,7 @@ const HomePage = () => {
                   color: 'var(--primary-gold)',
                 }}
               >
-                Moon Shine Interiors
+                Sun Shine Interiors
               </h3>
               <p style={{ marginBottom: '1rem', opacity: 0.8 }}>
                 24/3, Dasu Babu Bagan, Kamarhati, Kolkata - 58
@@ -171,7 +171,20 @@ const HomePage = () => {
                 📧 mdazadansari2606@gmail.com | 📱 9038520720 | 📱 9163135727
               </p>
               <p style={{ fontSize: '0.9rem', opacity: 0.6 }}>
-                © 2025 Moon Shine Interiors. All rights reserved.
+                ©{new Date().getFullYear()} Sun Shine Interiors Designer. All
+                rights reserved. Powered by{' '}
+                <a
+                  href="https://www.evonnexis.com/"
+                  style={{
+                    color: 'var(--primary-gold)',
+                    fontFamily: 'Playfair Display, serif',
+                    textDecoration: 'none',
+                  }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Evonnexis Pvt. Ltd.
+                </a>
               </p>
             </motion.div>
           </footer>
@@ -182,23 +195,3 @@ const HomePage = () => {
 }
 
 export default HomePage
-
-// pages/index.tsx (or app/page.tsx)
-// export default function Home() {
-//   // Temporary maintenance mode
-//   return (
-//     <div
-//       style={{
-//         display: 'flex',
-//         flexDirection: 'column',
-//         alignItems: 'center',
-//         justifyContent: 'center',
-//         height: '100vh',
-//         fontFamily: 'Arial, sans-serif',
-//       }}
-//     >
-//       <h1>🔧 Site Under Maintenance</h1>
-//       <p>We'll be back soon!</p>
-//     </div>
-//   )
-// }

@@ -1,4 +1,4 @@
-/* Header Styles - styles/Header.css - Fixed Flickering Issues */
+/* Header Styles - styles/Header.css - Fixed Flickering Issues + Logo Text Gap Fix */
 
 .header {
   position: fixed;
@@ -101,7 +101,47 @@
   transform: translate3d(0, 0, 0) scale(1.02);
 }
 
-/* Logo Text Styling - Stable */
+/* Logo Text Container - NEW: Reduces vertical gap */
+.logo-text-container {
+  display: flex;
+  flex-direction: column;
+  line-height: 1; /* Tight line height */
+  gap: 0; /* No gap between flex items */
+  justify-content: center; /* Center vertically */
+}
+
+/* Individual Logo Text Lines - NEW */
+.logo-text-line {
+  background: linear-gradient(
+    135deg,
+    var(--primary-purple),
+    var(--primary-gold)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: var(--transition);
+  backface-visibility: hidden;
+
+  /* Remove vertical spacing */
+  line-height: 0.9; /* Very tight line height */
+  margin: 0; /* No margin */
+  padding: 0; /* No padding */
+  display: block; /* Ensure proper rendering */
+}
+
+/* Alternative: Even tighter spacing */
+.logo-text-container.tight {
+  line-height: 0.8;
+  gap: -2px; /* Negative gap to overlap slightly */
+}
+
+.logo-text-container.tight .logo-text-line {
+  line-height: 0.8;
+  margin: -1px 0; /* Negative margin for tighter spacing */
+}
+
+/* Logo Text Styling - Stable (Updated for compatibility) */
 .logo span {
   background: linear-gradient(
     135deg,
@@ -116,7 +156,8 @@
   backface-visibility: hidden;
 }
 
-.logo:hover span {
+.logo:hover span,
+.logo:hover .logo-text-line {
   filter: drop-shadow(0 2px 4px rgba(139, 92, 246, 0.3));
 }
 
@@ -430,7 +471,7 @@
   border-bottom: none;
 }
 
-/* Mobile Responsive */
+/* Mobile Responsive - Updated for logo text container */
 @media (max-width: 1024px) {
   .nav.desktop-nav {
     gap: 1.5rem;
@@ -479,6 +520,15 @@
   .header-actions {
     gap: 0.5rem;
   }
+
+  /* Logo text responsive adjustments */
+  .logo-text-container {
+    line-height: 0.9;
+  }
+
+  .logo-text-line {
+    line-height: 0.85;
+  }
 }
 
 @media (max-width: 480px) {
@@ -519,6 +569,15 @@
   .mobile-nav-link {
     padding: 0.8rem 1rem;
     font-size: 0.95rem;
+  }
+
+  /* Logo text responsive adjustments for small screens */
+  .logo-text-container {
+    line-height: 0.85;
+  }
+
+  .logo-text-line {
+    line-height: 0.8;
   }
 }
 
@@ -630,7 +689,8 @@
     border: 2px solid var(--current-text);
   }
 
-  .logo span {
+  .logo span,
+  .logo-text-line {
     -webkit-text-fill-color: var(--current-text);
     background: none;
   }

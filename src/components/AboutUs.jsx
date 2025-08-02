@@ -73,21 +73,24 @@ const About = () => {
     {
       name: 'Azad Ansari',
       role: 'CEO & Lead Interior Designer',
-      image: '/images/CEO.jpg',
+      // image: '/images/CEO.jpg',
+      image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61',
       description:
         'As our CEO and Lead Interior Designer, Azad brings over 8+ years of exceptional experience in transforming spaces into stunning environments. His expertise spans residential, commercial, and hospitality design. Known for his innovative approach to space planning and sustainable design solutions, Azad has successfully completed 500+ projects across Kolkata and Eastern India. He specializes in contemporary and modern interior styles, with a keen eye for luxury finishes and smart home integration.',
     },
     {
       name: 'Naushad Ansari',
       role: 'Assistant Interior Designer',
-      image: '/images/team-member1.jpg',
+      // image: '/images/team-member1.jpg',
+      image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61',
       description:
         'Naushad is a skilled Assistant Interior Designer with 5+ years of experience in creating beautiful and functional spaces. He specializes in project coordination, site supervision, and client consultation. His expertise includes space planning, material selection, and ensuring seamless execution of design concepts. Naushad excels at managing multiple projects simultaneously while maintaining high quality standards. He is particularly adept at residential renovations, office interiors, and retail space design.',
     },
     {
       name: 'Khalid Ali',
       role: 'Assistant Interior Designer',
-      image: '/images/profile1.jpg',
+      // image: '/images/profile1.jpg',
+      image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61',
       description:
         "Khalid is a talented Assistant Interior Designer who specializes in residential design with a focus on modern and minimalist aesthetics. With his strong background in 3D visualization and space optimization, he excels at creating functional yet beautiful living spaces. His expertise includes kitchen and bathroom design, custom furniture selection, and color coordination. Khalid is passionate about incorporating the latest design trends while ensuring each project reflects the client's unique personality and lifestyle needs.",
     },
