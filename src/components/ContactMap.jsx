@@ -123,7 +123,7 @@ const ContactMap = ({ center, address }) => {
                 fontWeight: 'bold',
               }}
             >
-              Moon Shine Interiors
+              Sun Shine Interiors
             </h3>
             <div
               style={{

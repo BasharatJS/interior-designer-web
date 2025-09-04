@@ -11,11 +11,11 @@ const playfair = Playfair_Display({
 })
 
 export const metadata = {
-  title: 'Moon Shine Interiors | Premium Interior Design Services in Kolkata',
+  title: 'Sun Shine Interiors | Premium Interior Design Services in Kolkata',
   description:
-    'Transform your space with Moon Shine Interiors. We create stunning, functional interior designs that reflect your personality and enhance your lifestyle. Based in Kolkata.',
+    'Transform your space with Sun Shine Interiors. We create stunning, functional interior designs that reflect your personality and enhance your lifestyle. Based in Kolkata.',
   keywords:
-    'interior design, Kolkata interior designer, home decor, luxury interiors, residential design, commercial design, Moon Shine Interiors',
+    'interior design, Kolkata interior designer, home decor, luxury interiors, residential design, commercial design, Sun Shine Interiors',
 
   // Simple favicon setup
   icons: {

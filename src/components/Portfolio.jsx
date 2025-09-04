@@ -424,8 +424,7 @@ const Portfolio = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: false }}
           >
-            Explore our diverse collection of interior design projects powered
-            by live data from Google Sheets.
+            Explore our diverse collection of interior design projects.
             {loading && ' Loading latest projects...'}
             {filterLoading && ' Filtering projects...'}
           </motion.p>
@@ -515,7 +514,7 @@ const Portfolio = () => {
             <p>
               {error
                 ? '⚠️ Using fallback data'
-                : '✅ Live data from Google Sheets'}
+                : '✅ Live data'}
               {!error && ` • Last updated: ${new Date().toLocaleTimeString()}`}
             </p>
           </motion.div>

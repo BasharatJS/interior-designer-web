@@ -42,7 +42,7 @@ const LoadingScreen = ({ isLoading }) => {
                 backgroundClip: 'text',
               }}
             >
-              Moon Shine Interiors
+              Sun Shine Interiors
             </motion.h2>
             <motion.p
               initial={{ opacity: 0 }}
@@ -133,7 +133,7 @@ const HomePage = () => {
             <Hero />
             <About />
             <Services />
-            <Gallery />
+            {/* <Gallery /> */}
             <Portfolio />
             <WhyChooseUs />
             <Contact />
@@ -165,10 +165,10 @@ const HomePage = () => {
                 Sun Shine Interiors
               </h3>
               <p style={{ marginBottom: '1rem', opacity: 0.8 }}>
-                24/3, Dasu Babu Bagan, Kamarhati, Kolkata - 58
+                106, PB Ghat Road, Kamarhati, Kolkata - 58
               </p>
               <p style={{ marginBottom: '1rem', opacity: 0.8 }}>
-                📧 mdazadansari2606@gmail.com | 📱 9038520720 | 📱 9163135727
+                📧 evonnexis@gmail.com | 📱 8697805501 | 📱 9875395442
               </p>
               <p style={{ fontSize: '0.9rem', opacity: 0.6 }}>
                 ©{new Date().getFullYear()} Sun Shine Interiors Designer. All

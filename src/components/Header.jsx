@@ -17,7 +17,7 @@ const Header = () => {
       { id: 'home', label: 'Home' },
       { id: 'about', label: 'About Us' },
       { id: 'services', label: 'Our Services' },
-      { id: 'gallery', label: 'Gallery' },
+      // { id: 'gallery', label: 'Gallery' },
       { id: 'portfolio', label: 'Portfolio' },
       { id: 'why-choose-us', label: 'Why Choose Us' },
       { id: 'contact', label: 'Contact Us' },

@@ -49,7 +49,7 @@ const About = () => {
     story: {
       title: 'Our Story',
       content:
-        "Founded in 2016, Moon Shine Interiors began as a dream to transform ordinary spaces into extraordinary experiences. What started as a small team of passionate designers has grown into Kolkata's most trusted interior design firm. We believe that every space tells a story, and we're here to help you write yours.",
+        "Founded in 2016, Sun Shine Interiors began as a dream to transform ordinary spaces into extraordinary experiences. What started as a small team of passionate designers has grown into Kolkata's most trusted interior design firm. We believe that every space tells a story, and we're here to help you write yours.",
       image:
         'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop',
     },
@@ -71,28 +71,28 @@ const About = () => {
 
   const team = [
     {
-      name: 'Azad Ansari',
+      name: 'Afroz Ahmed',
       role: 'CEO & Lead Interior Designer',
       // image: '/images/CEO.jpg',
-      image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61',
+      image: 'https://avatar.iran.liara.run/public/2',
       description:
-        'As our CEO and Lead Interior Designer, Azad brings over 8+ years of exceptional experience in transforming spaces into stunning environments. His expertise spans residential, commercial, and hospitality design. Known for his innovative approach to space planning and sustainable design solutions, Azad has successfully completed 500+ projects across Kolkata and Eastern India. He specializes in contemporary and modern interior styles, with a keen eye for luxury finishes and smart home integration.',
+        'As our CEO and Lead Interior Designer, Afroz brings over 8+ years of exceptional experience in transforming spaces into stunning environments. His expertise spans residential, commercial, and hospitality design. Known for his innovative approach to space planning and sustainable design solutions, Afroz has successfully completed 500+ projects across Kolkata and Eastern India. He specializes in contemporary and modern interior styles, with a keen eye for luxury finishes and smart home integration.',
     },
     {
-      name: 'Naushad Ansari',
+      name: 'Mohammed Firoz',
       role: 'Assistant Interior Designer',
       // image: '/images/team-member1.jpg',
-      image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61',
+      image: 'https://avatar.iran.liara.run/public/20',
       description:
-        'Naushad is a skilled Assistant Interior Designer with 5+ years of experience in creating beautiful and functional spaces. He specializes in project coordination, site supervision, and client consultation. His expertise includes space planning, material selection, and ensuring seamless execution of design concepts. Naushad excels at managing multiple projects simultaneously while maintaining high quality standards. He is particularly adept at residential renovations, office interiors, and retail space design.',
+        'Mohammed Firoz is a skilled Assistant Interior Designer with 5+ years of experience in creating beautiful and functional spaces. He specializes in project coordination, site supervision, and client consultation. His expertise includes space planning, material selection, and ensuring seamless execution of design concepts. Mohammed Firoz excels at managing multiple projects simultaneously while maintaining high quality standards. He is particularly adept at residential renovations, office interiors, and retail space design.',
     },
     {
-      name: 'Khalid Ali',
+      name: 'Mohammed Basharat',
       role: 'Assistant Interior Designer',
       // image: '/images/profile1.jpg',
-      image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61',
+      image: 'https://avatar.iran.liara.run/public/33',
       description:
-        "Khalid is a talented Assistant Interior Designer who specializes in residential design with a focus on modern and minimalist aesthetics. With his strong background in 3D visualization and space optimization, he excels at creating functional yet beautiful living spaces. His expertise includes kitchen and bathroom design, custom furniture selection, and color coordination. Khalid is passionate about incorporating the latest design trends while ensuring each project reflects the client's unique personality and lifestyle needs.",
+        "Basharat is a talented Assistant Interior Designer who specializes in residential design with a focus on modern and minimalist aesthetics. With his strong background in 3D visualization and space optimization, he excels at creating functional yet beautiful living spaces. His expertise includes kitchen and bathroom design, custom furniture selection, and color coordination. Basharat is passionate about incorporating the latest design trends while ensuring each project reflects the client's unique personality and lifestyle needs.",
     },
   ]
 

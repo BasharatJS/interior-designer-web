@@ -115,9 +115,9 @@ const Contact = () => {
   }
 
   const contactInfo = {
-    address: '24/3, Dasu Babu Bagan, Kamarhati, Kolkata - 58',
-    phone: ['+91 9038520720', '+91 9163135727'],
-    email: 'mdazadansari2606@gmail.com',
+    address: '106, PB Ghat Road, Kamarhati, Kolkata - 58',
+    phone: ['+91 8697805501', '+91 9875395442'],
+    email: 'evonnexis@gmail.com',
     coordinates: [22.6708, 88.3639], // Kolkata coordinates
   }
 

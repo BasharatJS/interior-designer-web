@@ -82,12 +82,12 @@ const Hero = () => {
     const pdf2 = '/images/UdyamRegistrationCertificate.pdf'
 
     // Open first PDF
-    window.open(pdf1, '_blank', 'noopener,noreferrer')
+    // window.open(pdf1, '_blank', 'noopener,noreferrer')
 
     // Small delay before opening second PDF to avoid popup blockers
-    setTimeout(() => {
-      window.open(pdf2, '_blank', 'noopener,noreferrer')
-    }, 100)
+    // setTimeout(() => {
+    //   window.open(pdf2, '_blank', 'noopener,noreferrer')
+    // }, 100)
   }
 
   return (
