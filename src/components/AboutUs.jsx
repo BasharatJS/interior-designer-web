@@ -87,7 +87,7 @@ const About = () => {
         'Mohammed Firoz is a skilled Assistant Interior Designer with 5+ years of experience in creating beautiful and functional spaces. He specializes in project coordination, site supervision, and client consultation. His expertise includes space planning, material selection, and ensuring seamless execution of design concepts. Mohammed Firoz excels at managing multiple projects simultaneously while maintaining high quality standards. He is particularly adept at residential renovations, office interiors, and retail space design.',
     },
     {
-      name: 'Mohammed Basharat',
+      name: 'Basharat Taquee',
       role: 'Assistant Interior Designer',
       // image: '/images/profile1.jpg',
       image: 'https://avatar.iran.liara.run/public/33',
